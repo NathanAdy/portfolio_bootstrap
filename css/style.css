@@ -124,7 +124,7 @@ body {
 .hero .content h1 {
   font-size: 3em;
   font-weight: 700;
-  color: var(--bs-info-text);
+  color: #6edff6;
   text-shadow: 1px 1px 3px rgba(5, 5, 5, 0.5);
   line-height: 1.2;
 }
@@ -134,7 +134,7 @@ body {
   margin-top: 1rem;
   line-height: 1.4;
   font-weight: 300;
-  color: var(--bs-light-text);
+  color: #fff;
   text-shadow: 1px 1px 3px rgba(5, 5, 5, 0.5);
 }
 

@@ -1,238 +1,275 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio Nath</title>
-    <!-- BOOTSTRAP -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <!-- bootstrap ikon -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-    />
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- style css -->
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    <!-- nav start -->
-    <nav class="nav-bar">
-      <a href="#" class="logo">Nath</a>
-      <div class="navigasi">
-        <a href="#" class="link">Home</a>
-        <a href="#about" class="link">About Me</a>
-        <a href="#project" class="link">Project</a>
-        <a href="#contact" class="link">Contact</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Nath</title>
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <!-- bootstrap ikon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap" rel="stylesheet" />
+  <!-- style css -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- nav start -->
+  <nav class="nav-bar">
+    <a href="#" class="logo">Nath</a>
+    <div class="navigasi">
+      <a href="#" class="link">Home</a>
+      <a href="#about" class="link">About Me</a>
+      <a href="#project" class="link">Project</a>
+      <a href="#contact" class="link">Contact</a>
+    </div>
+    <div class="menu-navigasi">
+      <div class="dropdown">
+        <button id="themeDropdown" class="btn dropdown-toggle me-5" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <i class="bi bi-sun-fill theme-icon-active" data-theme-icon-active="bi-sun-fill"></i>
+        </button>
+        <ul id="themeDropdownMenu" class="dropdown-menu dropdown-menu-end">
+          <li>
+            <button class="dropdown-item d-flex align-item-center" type="button" data-bs-theme-value="light">
+              <i class="bi bi-sun-fill me-2 opacity-50" data-theme-icon="bi-sun-fill"></i>Light </button>
+          </li>
+          <li>
+            <button class="dropdown-item d-flex align-item-center" type="button" data-bs-theme-value="dark">
+              <i class="bi bi-moon-fill me-2 opacity-50" data-theme-icon="bi-moon-fill"></i>Dark </button>
+          </li>
+          <li>
+            <button class="dropdown-item d-flex align-item-center" type="button" data-bs-theme-value="auto">
+              <i class="bi bi-circle-half me-2 opacity-50" data-theme-icon="bi-circle-half"></i>Auto </button>
+          </li>
+        </ul>
       </div>
-      <div class="menu-navigasi">
-        <div class="dropdown">
-          <button
-            id="themeDropdown"
-            class="btn dropdown-toggle me-5"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <i
-              class="bi bi-sun-fill theme-icon-active"
-              data-theme-icon-active="bi-sun-fill"
-            ></i>
-          </button>
-          <ul id="themeDropdownMenu" class="dropdown-menu dropdown-menu-end">
-            <li>
-              <button
-                class="dropdown-item d-flex align-item-center"
-                type="button"
-                data-bs-theme-value="light"
-              >
-                <i
-                  class="bi bi-sun-fill me-2 opacity-50"
-                  data-theme-icon="bi-sun-fill"
-                ></i
-                >Light
-              </button>
-            </li>
-            <li>
-              <button
-                class="dropdown-item d-flex align-item-center"
-                type="button"
-                data-bs-theme-value="dark"
-              >
-                <i
-                  class="bi bi-moon-fill me-2 opacity-50"
-                  data-theme-icon="bi-moon-fill"
-                ></i
-                >Dark
-              </button>
-            </li>
-            <li>
-              <button
-                class="dropdown-item d-flex align-item-center"
-                type="button"
-                data-bs-theme-value="auto"
-              >
-                <i
-                  class="bi bi-circle-half me-2 opacity-50"
-                  data-theme-icon="bi-circle-half"
-                ></i
-                >Auto
-              </button>
-            </li>
-          </ul>
-        </div>
-        <div class="menu">
-          <a href="#" id="menu">
-            <i class="bi bi-list"></i>
-          </a>
-        </div>
+      <div class="menu">
+        <a href="#" id="menu">
+          <i class="bi bi-list"></i>
+        </a>
       </div>
-    </nav>
-    <!-- nav end -->
-    <!-- hero start -->
-    <section id="home" class="hero">
-      <main class="content">
-        <h1>Personal Portofolio by Nath</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fugiat
-          vitae distinctio!
-        </p>
-        <a href="#about" class="btn">Get Started</a>
-      </main>
-    </section>
-    <!-- hero end -->
-    <!-- about start -->
-    <section id="about" class="about">
-      <h2>About <span>Me</span></h2>
-      <div class="row">
-        <div class="about-img">
-          <img src="img/hero2.png" class="animated" alt="nath" />
+    </div>
+  </nav>
+  <!-- nav end -->
+  <!-- hero start -->
+  <section id="home" class="hero">
+    <main class="content">
+      <h1>Personal Portofolio by Nath</h1>
+      <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid a mollitia fugiat facilis magni blanditiis
+        culpa dolorem nesciunt veniam. Incidunt, minus possimus officia! </p>
+      <div class="tech">
+        <div class="techIcon">
+          <img src="img/htmlIcon.png" alt="html-icon">
         </div>
-        <div class="content">
-          <h3>Hi, <span>I'm Jonathan</span></h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            molestiae harum voluptates rem hic nihil? Commodi labore molestiae
-            sed aspernatur.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-            dignissimos sunt quis iure accusantium voluptates adipisci eligendi
-            id vel dolorum!
-          </p>
+        <div class="techIcon">
+          <img src="img/cssIcon.png" alt="css-icon">
+        </div>
+        <div class="techIcon">
+          <img src="img/jsIcon.png" alt="js-icon">
+        </div>
+        <div class="techIcon">
+          <img src="img/bootstrapIcon.png" alt="js-icon">
         </div>
       </div>
-    </section>
-    <!-- about end -->
-    <!-- project start -->
-    <section id="project" class="project">
-      <h2>Project</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos doloremque.
-      </p>
-      <div class="project-row">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <h3 class="title">UI / UX</h3>
-            </div>
-            <div class="flip-card-back">
-              <img src="img/1.png" alt="" />
-              <a href="#detail" class="project-detail">See Project UI / UX </a>
-            </div>
+      <a href="#about" class="btn">Get Started</a>
+    </main>
+  </section>
+  <!-- hero end -->
+  <!-- about start -->
+  <section id="about" class="about">
+    <h2>About <span>Me</span></h2>
+    <div class="row">
+      <div class="about-img">
+        <img src="img/hero2.png" class="animated" alt="nath" />
+      </div>
+      <div class="content">
+        <h3>Hi, <span>I'm Jonathan</span></h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate molestiae harum voluptates rem hic
+          nihil? Commodi labore molestiae sed aspernatur. </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dignissimos sunt quis iure accusantium
+          voluptates adipisci eligendi id vel dolorum! </p>
+      </div>
+    </div>
+  </section>
+  <!-- about end -->
+  <!-- project start -->
+  <section id="project" class="project">
+    <h2>Project</h2>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos doloremque. </p>
+    <div class="project-row">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3 class="title">UI / UX</h3>
+          </div>
+          <div class="flip-card-back">
+            <img src="img/1.png" alt="" />
+            <a href="#detail" class="project-detail">See Project UI / UX </a>
           </div>
         </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <h3 class="title">WEB DEVELOPER</h3>
-            </div>
-            <div class="flip-card-back">
-              <img src="img/3.png" alt="" />
-              <a href="#detail" class="project-detail">See Project Web Dev</a>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <h3 class="title">PYTHON DEV</h3>
-            </div>
-            <div class="flip-card-back">
-              <img src="img/2.png" alt="" />
-              <a href="#detail" class="project-detail"
-                >See Project Python Dev</a
-              >
-            </div>
+        <div class="tech">
+          <div class="techIcon">
+            <img src="img/figmaIcon.png" alt="figma-icon">
+            <div class="tooltip">FIGMA</div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- project end -->
-    <!-- kontak star -->
-    <section id="contact" class="contact">
-      <h2><span>Contact</span> Me</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
-        nam!
-      </p>
-      <div class="row-cnt">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d655.1176238650986!2d123.50978851847391!3d-10.239833616669987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1676818284560!5m2!1sid!2sid"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          class="map"
-        ></iframe>
-        <form action="">
-          <div class="input-group">
-            <i class="bi bi-person-fill"></i>
-            <input required="" type="text" name="text" class="input" />
-            <label class="title-input">Name</label>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3 class="title">WEB DEVELOPER</h3>
           </div>
-          <div class="input-group">
-            <i class="bi bi-envelope-at-fill"></i>
-            <input required="" type="text" name="text" class="input" />
-            <label class="title-input">Email</label>
+          <div class="flip-card-back">
+            <img src="img/3.png" alt="" />
+            <a href="#detail" class="project-detail">See Project Web Dev</a>
           </div>
-          <div class="input-group">
-            <i class="bi bi-telephone-fill"></i>
-            <input required="" type="number" name="number" class="input" />
-            <label class="title-input">Phone Number</label>
+        </div>
+        <div class="tech">
+          <div class="techIcon">
+            <img src="img/htmlIcon.png" alt="html-icon">
+            <div class="tooltip">HTML</div>
           </div>
-          <button type="submit" class="send">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>Send
-          </button>
-        </form>
+          <div class="techIcon">
+            <img src="img/cssIcon.png" alt="css-icon">
+            <div class="tooltip">CSS</div>
+          </div>
+          <div class="techIcon">
+            <img src="img/jsIcon.png" alt="js-icon">
+            <div class="tooltip">JAVASCRIPT</div>
+          </div>
+          <div class="techIcon">
+            <img src="img/tailwindIcon.png" alt="tw-icon">
+            <div class="tooltip">TAILWIND</div>
+          </div>
+        </div>
       </div>
-    </section>
-    <!-- kontak end -->
-    <!--  footer start -->
-    <footer>
-      <div class="sosmed">
-        <a href="#facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#tiktok"><i class="bi bi-tiktok"></i></a>
-        <a href="https://github.com/NathanAdy/nathanady"
-          ><i class="bi bi-github"></i
-        ></a>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3 class="title">WEB DEVELOPER</h3>
+          </div>
+          <div class="flip-card-back">
+            <img src="img/2.png" alt="" />
+            <a href="#detail" class="project-detail">See Project Web Dev</a>
+          </div>
+        </div>
+        <div class="tech">
+          <div class="techIcon">
+            <img src="img/htmlIcon.png" alt="html-icon">
+            <div class="tooltip">HTML</div>
+          </div>
+          <div class="techIcon">
+            <img src="img/cssIcon.png" alt="css-icon">
+            <div class="tooltip">CSS</div>
+          </div>
+          <div class="techIcon">
+            <img src="img/jsIcon.png" alt="js-icon">
+            <div class="tooltip">JAVASCRIPT</div>
+          </div>
+          <div class="techIcon">
+            <img src="img/tailwindIcon.png" alt="tw-icon">
+            <div class="tooltip">TAILWIND</div>
+          </div>
+          <div class="techIcon">
+            <img src="img/phpIcon.png" alt="php-icon">
+            <div class="tooltip">PHP</div>
+          </div>
+          <div class="techIcon">
+            <img src="img/mysqlIcon.png" alt="sql-icon">
+            <div class="tooltip">MYSQL</div>
+          </div>
+        </div>
       </div>
+<<<<<<< HEAD
+    </div>
+  </section>
+  <!-- project end -->
+  <!-- kontak star -->
+  <section id="contact" class="contact">
+    <h2><span>Contact</span> Me</h2>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nam! </p>
+    <div class="row-cnt">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d655.1176238650986!2d123.50978851847391!3d-10.239833616669987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1676818284560!5m2!1sid!2sid"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+      <form action="">
+        <div class="input-group">
+          <i class="bi bi-person-fill"></i>
+          <input required="" type="text" name="text" class="input" />
+          <label class="title-input">Name</label>
+        </div>
+        <div class="input-group">
+          <i class="bi bi-envelope-at-fill"></i>
+          <input required="" type="text" name="text" class="input" />
+          <label class="title-input">Email</label>
+        </div>
+        <div class="input-group">
+          <i class="bi bi-telephone-fill"></i>
+          <input required="" type="number" name="number" class="input" />
+          <label class="title-input">Phone Number</label>
+        </div>
+        <button type="submit" class="send">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>Send </button>
+      </form>
+    </div>
+  </section>
+  <!-- kontak end -->
+  <!--  footer start -->
+  <footer>
+    <div class="sosmed">
+      <a href="#facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#tiktok"><i class="bi bi-tiktok"></i></a>
+      <a href="https://github.com/NathanAdy/nathanady"><i class="bi bi-github"></i></a>
+    </div>
+    <div class="loct">
+      <p>Kab.Kupang-Nusa Tenggara Timur</p>
+    </div>
+    <div class="creat">
+      <p>Created By <a href="#">Jonathan</a> | &copy;2023.</p>
+    </div>
+  </footer>
+  <!-- footer end -->
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+  </script>
+  <!-- DARK MODE JS -->
+  <script>
+    (() => {
+      "use strict";
+      const storedTheme = localStorage.getItem("theme");
+      const getPreferredTheme = () => {
+        if (storedTheme) {
+          return storedTheme;
+        }
+        return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      };
+      const setTheme = function (theme) {
+        if (theme === "auto" && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          document.documentElement.setAttribute("data-bs-theme", "dark");
+        } else {
+          document.documentElement.setAttribute("data-bs-theme", theme);
+        }
+      };
+      setTheme(getPreferredTheme());
+      const showActiveTheme = (theme) => {
+        const activeThemeIcon = document.querySelector(".theme-icon-active");
+        const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
+        const iconOfActiveBtn = btnToActive.querySelector("i").dataset.themeIcon;
+        document.querySelectorAll("[data-bs-theme-value]").forEach((element) => {
+          element.classList.remove("active");
+=======
       <div class="loct">
         <p>Kab.Kupang-Nusa Tenggara Timur</p>
       </div>
@@ -310,10 +347,34 @@
                 showActiveTheme(theme);
               }
             });
+>>>>>>> 9518e6e537fd2328c2c226e1b9b9c451ec314997
         });
-      })();
-    </script>
-    <!-- MY SCRIPT -->
-    <script src="js/script.js"></script>
-  </body>
+        btnToActive.classList.add("active");
+        activeThemeIcon.classList.remove(activeThemeIcon.dataset.themeIconActive);
+        activeThemeIcon.classList.add(iconOfActiveBtn);
+        activeThemeIcon.dataset.iconOfActive = iconOfActiveBtn;
+      };
+      window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+        if (storedTheme !== "light" || storedTheme !== "dark") {
+          setTheme(getPreferredTheme());
+        }
+      });
+      window.addEventListener("DOMContentLoaded", () => {
+        showActiveTheme(getPreferredTheme());
+        document.getElementById("themeDropdownMenu").addEventListener("click", (event) => {
+          const toggle = event.target.closest("[data-bs-theme-value]");
+          if (toggle) {
+            const theme = toggle.getAttribute("data-bs-theme-value");
+            localStorage.setItem("theme", theme);
+            setTheme(theme);
+            showActiveTheme(theme);
+          }
+        });
+      });
+    })();
+  </script>
+  <!-- MY SCRIPT -->
+  <script src="js/script.js"></script>
+</body>
+
 </html>

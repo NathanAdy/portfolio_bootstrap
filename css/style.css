@@ -122,11 +122,7 @@ body {
 .hero .content h1 {
   font-size: 3em;
   font-weight: 700;
-<<<<<<< HEAD
   color: #0dcaf0;
-=======
-  color: #6edff6;
->>>>>>> 9518e6e537fd2328c2c226e1b9b9c451ec314997
   text-shadow: 1px 1px 3px rgba(5, 5, 5, 0.5);
   line-height: 1.2;
 }
@@ -137,7 +133,6 @@ body {
   line-height: 1.4;
   font-weight: 300;
   color: #fff;
-<<<<<<< HEAD
 }
 
 .hero .tech {
@@ -159,9 +154,6 @@ body {
 
 .hero .tech .techIcon img {
   width: 2rem;
-=======
-  text-shadow: 1px 1px 3px rgba(5, 5, 5, 0.5);
->>>>>>> 9518e6e537fd2328c2c226e1b9b9c451ec314997
 }
 
 .hero .content .btn {

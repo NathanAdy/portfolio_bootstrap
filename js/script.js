@@ -4,7 +4,6 @@ const navbarNav = document.querySelector('.navigasi');
 // ketika ikon menu diklik
 document.querySelector('#menu').onclick = () => {
     navbarNav.classList.toggle('active');
-
 };
 
 // klik diluar are navbar untuk nav hilang
